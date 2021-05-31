@@ -1,0 +1,16 @@
+- name: Add an Apt signing key, uses whichever key is at the URL
+  apt_key:
+    url: https://pkg.jenkins.io/debian/jenkins.io.key
+    state: present
+
+# Add jenkins repository into sources list using specified filename.
+- apt_repository:
+    repo: deb https://pkg.jenkins.io/debian-stable binary/
+    state: present
+    filename: jenkins.list
+    update_cache: yes
+
+- name: Install jenkins
+  apt:
+    name: jenkins
+    state: present
