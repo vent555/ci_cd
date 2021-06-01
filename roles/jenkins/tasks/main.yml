@@ -3,6 +3,6 @@
   apt:
     update_cache: yes
 
-- include: hostname.yml
+#- include: hostname.yml
 - include: apt-install.yml
 - include: jenkins-install.yml

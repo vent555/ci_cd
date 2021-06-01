@@ -1,0 +1,6 @@
+---
+- name: Install "microk8s"
+  snap:
+    name: microk8s
+    classic: yes
+    channel: 1.21/stable

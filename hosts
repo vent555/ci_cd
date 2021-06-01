@@ -1,5 +1,6 @@
 [jenkins]
 jenkins ansible_host=127.0.0.1 ansible_port=2222
 
-[jenkins:vars]
-ansible_python_interpreter=/usr/bin/python3
+[kubernetes]
+kubernetes1 ansible_host=127.0.0.1 ansible_port=2201
+kubernetes2 ansible_host=127.0.0.1 ansible_port=2202

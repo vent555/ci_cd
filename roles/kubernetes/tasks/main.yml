@@ -1,0 +1,7 @@
+---
+# - name: update cache befor pakage install
+#   apt:
+#     update_cache: yes
+
+- include: snap-install.yml
+- include: change-user.yml

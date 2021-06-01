@@ -5,3 +5,11 @@
 
   roles:
     - jenkins
+
+
+- name: configure k8s servers
+  hosts: kubernetes
+  become: true
+
+  roles:
+    - kubernetes
